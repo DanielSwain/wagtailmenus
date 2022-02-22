@@ -23,16 +23,16 @@ The following variables are added to the context for each menu template or sub-m
 :``menu_items``:
     If the template is for rendering the first level of a main or flat menu,
     then ``menu_items`` will be a list of ``MainMenuItem`` or ``FlatMenuItem``
-    objects (respectively). In all other cases. it will be a list ``Page``
+    objects (respectively). In all other cases it will be a list of ``Page``
     objects.
 
     In either case, wagtailmenus adds a number of additional attributes to each
-    item to help keep you menu templates consistent. For more information
+    item to help keep your menu templates consistent. For more information
     see: :ref:`menu_items_added_attributes`
 
 :``current_level``:
-    An integer indicating the current level being rendered. This starts at
-    ``1`` for the initial template tag call, then increments by one for each
+    An integer indicating the current level being rendered. This number starts at
+    ``1`` for the initial template tag call and then increments by one for each
     additional ``<ul>`` level that is added by calling the ``{% sub_menu %}``
     tag
 
